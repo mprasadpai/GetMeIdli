@@ -7,7 +7,7 @@
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="All.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script><base>
-  <script type="text/javascript" src="Feedback/FeedBack.js"></script>
+
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
@@ -38,7 +38,7 @@
       <div id="content">
 
 
-      <form action="add_order.php" method="get">
+      <form action="/Order_Tracker/add_order.php" method="get">
       <table class="CSSTableGenerator">
       <tr><td>Order Form</td><tr>
            <tr><td>Name: <input type="text" name="name"></td></tr>
@@ -52,12 +52,7 @@
 
 
 
-         <h2>Customer Details</h2>
-        <?php
-		include ( $_SERVER['DOCUMENT_ROOT'] . '/Order_Tracker/display_order.php');
-		showVisitors($visitors);
-	?>
-                </div>
+
 
 
     </div>
